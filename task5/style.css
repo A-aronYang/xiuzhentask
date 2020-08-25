@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    /* 我们希望 header 采用固定的高度，只占用必须的空间 */
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    background-color: #5fc0cd;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    /* 将 flex-grow 设置为1，该元素会占用全部可使用空间 
+       而其他元素该属性值为0，因此不会得到多余的空间*/
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto;
+}
+
+.topNav {
+    display: inline-block;
+}
+
+header section {
+    padding: 0 10px;
+}
+
+.introduction {
+    position: relative;
+    height: 165px;
+    width: 100%;
+    background: url(images/bg.png) no-repeat;
+    background-size: cover;
+}
+
+.introduction .head {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background: url(images/head.png) no-repeat center 15px #fff;
+    background-size: 65%;
+}
+
+.introduction .userName {
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    color: #ffffff;
+}
+
+.introduction .address {
+    position: absolute;
+    top: 87px;
+    left: 128px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.introduction .add {
+    position: absolute;
+    top: 89px;
+    left: 114px;
+    height: 12px;
+    width: 10px;
+    background: url(images/add.png) no-repeat;
+    background-size: 100%;
+}
+
+main .a {
+    border-left: 2px solid #5fc0cd;
+    margin-left: 15px;
+    margin-top: 16px;
+    padding: 0 13px;
+}
+
+main .hr {
+    margin-top: 16px;
+    border-bottom: #e1e5e7 1px solid;
+}
+
+.messageone {
+    margin-left: 28px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.star {
+    /* display: inline-block; */
+    width: 16px;
+    vertical-align: middle;
+}
+
+.messageone img:nth-child(1) {
+    padding-left: 14px;
+    padding-right: 4px;
+}
+
+.messageone img:nth-child(4) {
+    padding-right: 4px;
+}
+
+.line {
+    display: inline-block;
+    height: 13px;
+    border-right: #e1e5e7 1px solid;
+    margin: -1px 8px;
+}
+
+.pl {
+    padding-left: 12px;
+    color: #999999;
+}
+
+.red {
+    color: #e26163;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    /* 和 header 一样，footer 也采用固定高度*/
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+    display: flex;
+    margin: 18px;
+}
+
+.comment {
+    background-color: #fff;
+    margin-right: 5px;
+    color: #5fc0cd;
+}
+
+.common {
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #5fc0cd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.phone {
+    background-color: #5fc0cd;
+    margin-left: 5px;
+    color: #fff;
+}

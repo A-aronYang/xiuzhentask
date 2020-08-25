@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	button,
+	input {
+    	outline: none;
+	}
+	input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #e1e5e7;
+    }
+	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color:    #e1e5e7;
+	}
+	input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color:    #e1e5e7;
+	}
+	input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    color:    #e1e5e7;
+	}
+
+	body {
+		width: 100%;
+		background-color: #eff0f4;
+		height:800px;
+	}
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		height: 44px;
+		width: 100%;
+		background-color: #5fc0cd;
+		color: #fff;
+		
+	}
+	span {
+		display: inline-block;
+		text-align: center;
+		line-height: 44px;
+		height: 44px;
+		width: 60px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	.in {
+		flex: 1;
+		display: inline-block;
+		font-size: 18px;
+		text-align: center;
+		line-height: 44px;
+	}
+	.log {
+		margin-top: 52px;
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+	 }
+	.text {
+		float: left;
+		height: 50px;
+		padding-left: 10px;
+		font-size: 16px;
+		color: #e1e5e7;
+		border: none;
+	}
+	.btn {
+		float: left;
+		height: 23px;
+		margin: 15px 13.5px;
+	}
+	em {
+		font-style: normal;
+		float: left;
+		padding-top: 14px;
+		color: #e1e5e7;
+	}
+	.log2 {
+		margin-top: 7px;
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+	 }
+	 a {
+    	color: #666;
+    	text-decoration: none;
+	}
+	.foot {
+		margin-top: 35px;
+		height: 44px;
+		width: 100%;
+		background-color: #5fc0cd;
+		color: #fff;
+		text-align: center;
+		line-height: 44px;
+	}
+	.footer {
+		font-size: 18px;
+		color: #f3f4f6;
+	}
+	.forget {
+		float: right;
+		margin-top: 10px;
+		margin-right: 10px; 
+		width: 73.5px;
+		color: #5fc0cd;
+		font-size: 16px;
+
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<span>关闭</span>
+		<div class="in">登录</div>
+		<span>注册</span>
+	</div>
+	<div class="log">
+		<img src="images/iphone.png" alt="" class="btn"><em>|</em>
+		<input type="text" class="text" value="请输入用户名">
+	</div>
+	<div class="log2">
+		<img src="images/lock.png" alt="" class="btn"><em>|</em>
+		<input type="password" class="text" placeholder="请输入您的密码">
+	</div>
+	<div class="foot">
+		<a href="#" class="footer">登 录</a>
+	</div>
+		<a href="#" class="forget">忘记密码?</a>
+		
+</body>
+</html>

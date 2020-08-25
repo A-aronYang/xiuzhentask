@@ -1,0 +1,202 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        position: absolute;
+        top: 45px;
+        bottom: 55px;
+        overflow: auto;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .topNav {
+        position: relative;
+        height: 45px;
+        background-color: #5fc0cd;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .button {
+        margin: 5px 0;
+        width: 142px;
+        background-color: #55a8b3;
+        border-radius: 5px;
+    }
+    
+    .btn1 {
+        border: 0;
+        padding: 12px;
+        border-right: 1px solid #999;
+        border-image: linear-gradient(white, #E2EAEC, white) 1 2;
+    }
+    
+    .btn2 {
+        border-right: 0
+    }
+    
+    button:focus {
+        outline: 0!important;
+    }
+    
+    .caret {
+        position: absolute;
+        right: 6px;
+        top: 20px;
+        color: #999;
+    }
+    
+    .box1 {
+        float: left;
+        height: 35px;
+        width: 71px;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #55a8b3;
+    }
+    
+    .box2 {
+        float: left;
+        height: 35px;
+        width: 71px;
+        border-radius: 5px;
+        background-color: #55a8b3;
+        color: #fff;
+    }
+    
+    .gps {
+        position: absolute;
+        top: 9px;
+        right: 14px;
+    }
+    
+    .bg-location {
+        position: absolute;
+        top: 9px;
+        right: 14px;
+        width: 21px;
+        height: 22px;
+        background: url(../images/css_sprites.png) -60px -6px;
+    }
+    
+    .topline {
+        border-top: 1px solid #ccc;
+    }
+    
+    .content {
+        padding: 14px 30px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .dropdownstart {
+        display: flex;
+    }
+    
+    .line2 {
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+    
+    .donot {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .red {
+        color: #e63b0e;
+    }
+    
+    .gray {
+        color: #999
+    }
+    
+    .line1,
+    .line2,
+    .line3 {
+        position: relative;
+    }
+    
+    .img1 {
+        position: absolute;
+        top: 2px;
+        left: -21px;
+    }
+    
+    .bg-next {
+        position: absolute;
+        top: 1px;
+        right: -31px;
+        width: 9.5px;
+        height: 16.5px;
+        background: url(../images/css_sprites.png) -89px -35.5px;
+    }
+    
+    .img3 {
+        position: absolute;
+        top: 2px;
+        left: -20px;
+    }
+    
+    footer {
+        display: flex;
+        height: 55px;
+        background-color: #f8fafb;
+        border-top: 1px solid #ddd;
+        padding-top: 2px;
+        position: absolute;
+        bottom: 0px;
+        z-index: 10;
+        width: 100%;
+    }
+    
+    .flex1 {
+        flex: 1;
+    }
+    
+    .home,
+    .me {
+        margin-top: 5px;
+    }
+    
+    .home {
+        color: #5fc0cd;
+        padding-left: 50px;
+    }
+    
+    .me {
+        color: #999;
+        padding-right: 50px;
+    }
+    
+    .home,
+    .me,
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bg-home {
+        width: 23px;
+        height: 20px;
+        background: url(../images/css_sprites.png) -5px -63px;
+    }
+    
+    .bg-center {
+        width: 47px;
+        height: 47px;
+        background: url(../images/css_sprites.png) -6px -6px;
+    }
+    
+    .bg-me {
+        width: 21px;
+        height: 20.5px;
+        background: url(../images/css_sprites.png) -91px -5px;
+    }
